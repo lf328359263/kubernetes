@@ -1,6 +1,6 @@
 #!/bin/bash
 MY_REGISTRY=registry.cn-hangzhou.aliyuncs.com/kongxiangshuai
-METRICS_SERVER_VERSION=v1.5.2
+METRICS_SERVER_VERSION=v0.3.1
 
 echo ""
 echo "=========================================================="
