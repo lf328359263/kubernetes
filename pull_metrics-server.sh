@@ -9,14 +9,14 @@ echo "=========================================================="
 echo ""
 
 ## 拉取镜像
-docker pull ${MY_REGISTRY}/metrics-server-amd64:${METRICS_SERVER_VERSION}
+docker pull ${MY_REGISTRY}/metrics-server:${METRICS_SERVER_VERSION}
 
 
 ## 添加Tag
-docker tag ${MY_REGISTRY}/metrics-server-amd64:${METRICS_SERVER_VERSION} k8s.gcr.io/metrics-server-amd64:${METRICS_SERVER_VERSION}
+docker tag ${MY_REGISTRY}/metrics-server:${METRICS_SERVER_VERSION} k8s.gcr.io/metrics-server-amd64:${METRICS_SERVER_VERSION}
 
 ## 
-docker rmi ${MY_REGISTRY}/metrics-server-amd64:${METRICS_SERVER_VERSION}
+docker rmi ${MY_REGISTRY}/metrics-server:${METRICS_SERVER_VERSION}
 
 echo ""
 echo "=========================================================="
